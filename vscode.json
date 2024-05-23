@@ -1,0 +1,75 @@
+{
+  "description": "VSCode F13-515 code navigation",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "f13"
+      },
+      "to": [
+        {
+          "key_code": "f12",
+          "modifiers": [
+            "fn"
+          ]
+        }
+      ],
+      "type": "basic",
+      "conditions": [
+        {
+          "bundle_identifiers": [
+            "^com\\.microsoft\\.VSCode",
+            "^com\\.microsoft\\.VSCodeInsiders"
+          ],
+          "type": "frontmost_application_if"
+        }
+      ]
+    },
+    {
+      "from": {
+        "key_code": "f14"
+      },
+      "to": [
+        {
+          "key_code": "hyphen",
+          "modifiers": [
+            "left_control"
+          ]
+        }
+      ],
+      "type": "basic",
+      "conditions": [
+        {
+          "bundle_identifiers": [
+            "^com\\.microsoft\\.VSCode",
+            "^com\\.microsoft\\.VSCodeInsiders"
+          ],
+          "type": "frontmost_application_if"
+        }
+      ]
+    },
+    {
+      "from": {
+        "key_code": "f15"
+      },
+      "to": [
+        {
+          "key_code": "hyphen",
+          "modifiers": [
+            "left_control",
+            "shift"
+          ]
+        }
+      ],
+      "type": "basic",
+      "conditions": [
+        {
+          "bundle_identifiers": [
+            "^com\\.microsoft\\.VSCode",
+            "^com\\.microsoft\\.VSCodeInsiders"
+          ],
+          "type": "frontmost_application_if"
+        }
+      ]
+    }
+  ]
+}
