@@ -1,75 +1,81 @@
 {
-  "description": "VSCode F13-515 code navigation",
-  "manipulators": [
-    {
-      "from": {
-        "key_code": "f13"
-      },
-      "to": [
+    "description": "VSCode F13-16 code navigation",
+    "manipulators": [
         {
-          "key_code": "f12",
-          "modifiers": [
-            "fn"
-          ]
-        }
-      ],
-      "type": "basic",
-      "conditions": [
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^com\\.microsoft\\.VSCode",
+                        "^com\\.microsoft\\.VSCodeInsiders"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": { "key_code": "f13" },
+            "to": [
+                {
+                    "key_code": "f12",
+                    "modifiers": ["fn"]
+                }
+            ],
+            "type": "basic"
+        },
         {
-          "bundle_identifiers": [
-            "^com\\.microsoft\\.VSCode",
-            "^com\\.microsoft\\.VSCodeInsiders"
-          ],
-          "type": "frontmost_application_if"
-        }
-      ]
-    },
-    {
-      "from": {
-        "key_code": "f14"
-      },
-      "to": [
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^com\\.microsoft\\.VSCode",
+                        "^com\\.microsoft\\.VSCodeInsiders"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": { "key_code": "f14" },
+            "to": [
+                {
+                    "key_code": "hyphen",
+                    "modifiers": ["left_control"]
+                }
+            ],
+            "type": "basic"
+        },
         {
-          "key_code": "hyphen",
-          "modifiers": [
-            "left_control"
-          ]
-        }
-      ],
-      "type": "basic",
-      "conditions": [
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^com\\.microsoft\\.VSCode",
+                        "^com\\.microsoft\\.VSCodeInsiders"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": { "key_code": "f15" },
+            "to": [
+                {
+                    "key_code": "hyphen",
+                    "modifiers": ["left_control", "shift"]
+                }
+            ],
+            "type": "basic"
+        },
         {
-          "bundle_identifiers": [
-            "^com\\.microsoft\\.VSCode",
-            "^com\\.microsoft\\.VSCodeInsiders"
-          ],
-          "type": "frontmost_application_if"
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^com\\.microsoft\\.VSCode",
+                        "^com\\.microsoft\\.VSCodeInsiders"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": { "key_code": "f16" },
+            "to": [
+                {
+                    "key_code": "f12",
+                    "modifiers": ["fn", "left_option"]
+                }
+            ],
+            "type": "basic"
         }
-      ]
-    },
-    {
-      "from": {
-        "key_code": "f15"
-      },
-      "to": [
-        {
-          "key_code": "hyphen",
-          "modifiers": [
-            "left_control",
-            "shift"
-          ]
-        }
-      ],
-      "type": "basic",
-      "conditions": [
-        {
-          "bundle_identifiers": [
-            "^com\\.microsoft\\.VSCode",
-            "^com\\.microsoft\\.VSCodeInsiders"
-          ],
-          "type": "frontmost_application_if"
-        }
-      ]
-    }
-  ]
+    ]
 }
