@@ -1,5 +1,5 @@
 {
-    "description": "VSCode F13-16 code navigation",
+    "description": "VSCode F13-16 code navigation - F13 is go to definition, F14 go back, F15 go forward, F17 peek definition",
     "manipulators": [
         {
             "conditions": [
